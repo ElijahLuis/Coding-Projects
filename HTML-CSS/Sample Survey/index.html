@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Elijah's Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Elijah's Survey Form</h1>
+      <p id="description" class="description text-center">Please fill out this survey form. Contact Elijah if you have any questions!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-section">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" name="name" class="form-control" type="text" placeholder="Enter your full name here." required />
+      </div>
+      <div class="form-section">
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email-address here." required />
+      </div>
+      <div class="form-section">
+        <label id="number-label" for="number">Age (in years): </label>
+        <input id="number" type="number" name="age" min="13" max="120" class="form-control" placeholder="(Optional)" /></label>
+      </div>
+      <div class="form-section">
+        <label id="dropdown-menu" for="dropdown">What best describes your employment status?</label>
+        <select id="dropdown" name="dropdown" class="form-control">
+            <option disabled selected value="">(Select one) </option>
+    <option value="1">Employed</option>
+    <option value="2">Self-employed</option>
+    <option value="3">Out of work</option>
+    <option value="4">Student</option>
+    <option value="5">Retired</option>
+    <option value="6">Unable to work</option>
+    <option value="7">Other</option>
+    </select>
+        </label>
+      </div>
+      <div class="form-section">
+        <p>Would you recommend this survey to a friend?</p>
+        <label for="select-answer"><input id="select-answer" type="radio" name="select-answer" class="input-radio" value="yes" checked />Without a doubt </label>
+        <label for="select-answer"><input id="select-answer" type="radio" name="select-answer" class="input-radio" value="maybe" />Perhaps, amigo </label>
+        <label for ="select-answer"><input id="select-answer" type="radio" name="select-answer" class="input-radio" value="no" />Not a chance, babe</label>
+      </div>
+      <div class="form-section">
+        <p>Which random sentence describes you the best?</p>
+        <select id="random-sentence" name="random-sentence" class="form-control" required>
+          <option disabled selected value="">(Select an option)</option>
+          <option value="sentence-a">The macaroni never falls far from the ocean.</option>
+          <option value="sentence-b">Whatever the season, the plants control me now.</option>
+          <option value="sentence-c">Free me from an apocalypse of marshmallows and sunshine.</option>
+          <option value="sentence-d">Millions of googly eyes scan my woolly sweater with glee. 
+          </select>
+      </div>
+      <div class="form-section">
+        <p>Do you have anything else to say, you random person, you?<span class="clue">(Check all that apply)</span></p>
+        <label for="rickroll"><input id="rickroll" type="checkbox" value="never-gonna-give-you-up" class="input-checkbox" />Never gonna give you up
+        </label>
+        <label for="rickroll"><input id="rickroll" type="checkbox" value="never-gonna-let-you-down" class="input-checkbox" />Never gonna let you down
+        </label>
+        <label for="rickroll"><input id="rickroll" type="checkbox" value="never-gonna-run-around-and-desert-you" class="input-checkbox" />Never gonna run around and desert you
+        </label>
+      </div>
+      <div class="form-section">
+        <p>Comments or suggestions?<span class="clue">(And you better choose your words carefully.)</span></p>
+        <textarea id="comments" name="comments" class="input-textarea" placeholder="Enter your carefully chosen comments and suggestions here..."></textarea>
+      </div>
+      <div class="form-section">
+        <label for="submit"><input id="submit" type="submit" name="submit" value="Submit" class="submit-button" />
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
+
