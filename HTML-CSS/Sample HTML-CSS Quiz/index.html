@@ -13,9 +13,9 @@
       <h1>HTML/CSS Quiz</h1>
       <nav>
         <ul>
-          <li><a href="#student-info">INFO</a></li>
-          <li><a href="#html-questions">HTML</a></li>
-          <li><a href="#css-questions">CSS</a></li>
+          <li><a href="#student-info" accesskey="i">INFO</a></li>
+          <li><a href="#html-questions" accesskey="h">HTML</a></li>
+          <li><a href="#css-questions" accesskey="c">CSS</a></li>
         </ul>
       </nav>
     </header>
@@ -42,7 +42,8 @@
             <p>1</p>
             <fieldset class="question" name="html-question-one">
               <legend>
-                Dumbledore was a great wizard, but he was not super sexy.
+                The legend element represents a caption for the content of its
+                parent fieldset element
               </legend>
               <ul class="answers-list">
                 <li>
@@ -64,7 +65,8 @@
             <p>2</p>
             <fieldset class="question" name="html-question-two">
               <legend>
-                You are required to be super sexy after taking this quiz.
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
               </legend>
               <ul class="answers-list">
                 <li>
@@ -97,16 +99,23 @@
               </select>
             </div>
             <div class="question-block">
-              <label for="css-questions">Do you have any questions? Like, at all?:</label>
+              <label for="css-questions">Do you have any questions:</label>
             </div>
             <div class="answer">
-              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is THE Flexbox...?"></textarea>
+              <textarea id="css-questions" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
             </div>
           </div>
         </section>
-      <button type="submit">Send it off, baby</button>
+        <button type="submit">Send it, baby</button>
       </form>
     </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
   </body>
 </html>
-
