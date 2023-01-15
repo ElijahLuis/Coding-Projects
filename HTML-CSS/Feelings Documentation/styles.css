@@ -1,0 +1,134 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  // Phone screens:
+  #navbar ul {
+    border: 1px solid;
+    height: 200px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+
+html, body {
+  min-width: 250px;
+  color: #000069;
+  background-color: #ffffff;
+  font-family: Georgia, sans-serif;
+  line-height: 1.75;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 250px;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgb(0,22,29,0.3);
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #666666;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 15px;
+  color: #666666;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0;
+}
+
+#main-doc {
+  position: absolute;
+  padding: 10px;
+  margin-left: 250px;
+  margin-bottom: 120px;
+}
+
+section article {
+  color: #666666;
+  margin: 10px;
+}
+
+section li {
+  margin: 10px 0 0 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #AAAAAA;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 10px;
+}
