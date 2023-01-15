@@ -1,1 +1,1 @@
-# freeCodeCamp projects completed by Elijah Hernandez.
+# Projects completed by Elijah Hernandez (via freeCodeCamp, AWS, or other independent entities).
